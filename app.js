@@ -11,13 +11,22 @@
 
   app.get('/:id/json', function (req,res) {
     sh.get(req.params.id, function(url) {
+      if(!url) {
+        res.end(JSON.stringify({error: "invalid request."}));
+        return;
+      }
       res.end(JSON.stringify({ target: url }));
     });
   });
 
   app.get('/:id', function (req,res) {
     sh.get(req.params.id, function(url) {
+      if(!url) {
+        res.end(JSON.stringify({error: "invalid request."}));
+        return;
+      }
       res.redirect(url, 301);
+      res.end();
     });
   });
 
