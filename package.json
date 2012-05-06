@@ -1,0 +1,21 @@
+{
+  "author": "Eric Jacobs <eric@chomp.us>",
+  "name": "short-service",
+  "description": "A url shortening service that uses node.js, connect, and shortness to do its bidding.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/techosaurus/short-service",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/techosaurus/short-service.git"
+  },
+  "main": "app.js",
+  "dependencies": {
+    "shortness": "0.0.x",
+    "express": "~2.5.9"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
