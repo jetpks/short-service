@@ -7,8 +7,7 @@ A node.js/express based short-url service that uses
 [shortness](https://github.com/techosaurus/shortness) as the storage library.
 
 
-Available through npm: `npm install short-service`
-edit the config file to use your own domain, and you're off to the races.
+Clone, edit the config file to use your own domain, `npm install` and you're off to the races.
 
 
 ### API
